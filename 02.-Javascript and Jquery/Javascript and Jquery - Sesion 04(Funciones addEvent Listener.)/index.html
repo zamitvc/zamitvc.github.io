@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVentos Listener</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Uso de AddEvent Listener</h1>
+    <p>Los eventos Listener lo utilizaremos en elementos, document y en el windows </p>
+    <button id="boton">Cambiar</button>
+    <script>
+        document.addEventListener("dblclick",cambio);
+        function cambio(){
+           alert("muy bien compañero ")
+        }
+
+        boton=document.querySelector("#boton");
+        boton.addEventListener("click",cambiar);
+        cuerpo=document.querySelector("body");
+        function cambiar(){
+            cuerpo.style.background="black";
+            cuerpo.style.color="White";
+        }
+    </script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        .caja {
+            width: 200px;
+            height: 200px;
+            background: blue;
+        }
+
+        #caja {
+            width: 100px;
+            height: 100px;
+            background: black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Que es Jquery?</h1>
+    <div class="container">
+        <p>Jquery es una Libreria de Javascript que complementa para el desarrollo de codigo.</p>
+        <div class="caja"></div>
+        <div id="caja"></div>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+        <script>
+            let caja=document.querySelector(".caja");
+            $(".caja").click(function(){
+                caja.style.background="red"
+            })
+        </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

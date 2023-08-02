@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Variables</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        .container{
+            width:80%;
+            margin: auto;
+        }
+        #parrafo{
+            font-size: 18px;
+            line-height: 30px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Usando los Identificadores</h2>
+    <div class="container">
+    <p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, excepturi debitis nam sequi asperiores similique minima quas facilis? Quam hic architecto dolores aperiam fugiat natus doloribus pariatur consequuntur debitis doloremque!Soluta, atque? Ab obcaecati illo nam nostrum tenetur veritatis reiciendis totam officia. Magni at saepe architecto odit, pariatur ipsam sed aspernatur id porro eligendi nam esse rerum quo, nihil laboriosam!s</p>
+    </div>
+    <br>
+    <div align="center">
+    <button onclick="rojo()">Cambiar a rojo</button>
+    <br>
+    <button onclick="negro()">Cambiar a negro</button>
+    </div>
+    <script>
+        function rojo(){
+        let parrafo=document.getElementById("parrafo");
+        parrafo.style.color="red";
+        }
+        function negro(){
+            let parrafo=document.getElementById("parrafo")
+            parrafo.style.color="black";
+        }
+    </script>
+ 
+</body>
+</html>
