@@ -1,0 +1,92 @@
+@charset "utf-8";
+.contenedor-header{
+    background: #0c0d0d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #073ef2;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #77b9ec;
+}
+.nav-responsive{
+    background-color: #90b61c;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.foto {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.menu {
+
+	margin-top: 13px;
+	padding: 5px 3px 5px 3px;
+	color: blue;
+	font-size: 26px;
+
+	float: right;
+	cursor: pointer;
+	border-radius: 4px;
+	display: none;
+}
+
+
+
+/*Media Querie*/
+
+
+
+
+
+
+
+@media (max-width:500px) {
+
+	.foto-mini {
+		display: none;
+	}
+
+
+	header p {
+		float: left;
+		display: block;
+		line-height: 65px;
+		color: #fff;
+		font-size: 26px;
+		font-family: 'helvetica'
+
+	}
+
+}

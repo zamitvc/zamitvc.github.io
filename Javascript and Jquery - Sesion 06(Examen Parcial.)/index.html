@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Centro</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/redes.css">
+    <link rel="stylesheet" href="css/paralaje.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/extra.css">
+<style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+}</style></head>
+<body>
+    <div id="preloader" style="transition: all 0.5s ease 0s; visibility: hidden;">
+        <img src="img/preloader.gif" alt="">
+    </div>
+
+    <div id="inicio"></div>
+    <header id="header" style="background: none; height: 70px; transition: all 0.5s ease 0s;">
+        <div class="container">
+        <div id="logo">
+            <a href="#inicio">
+            <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <!--Hamburguesa-->
+        <label class="btn-menu" onclick="llamar()">
+            <label class="close fas fa-bars" id="menu" style="color:white;"></label>
+        </label>
+        <nav class="botonera">
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#nosotros">COMUNICATE</a></li>
+                <li><a href="#galeria">MUESTRAS</a></li>
+                <li><a href="#contactos">LLAMANOS</a></li>
+                <li><a href="login.html"><i class="fas fa-user"></i> LOGIN</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+  
+
+    <div class="banner">
+    <div class="overlay">
+        <div class="cont-banner">
+            <h2>Clinica Dental Centro</h2>
+            <p>Con más de una década de excelencia en nuestro campo, hemos perfeccionado nuestras habilidades para brindar a nuestros pacientes una experiencia inigualable. Nos enorgullece ser líderes en tratamientos especializados y vanguardistas, respaldados por un equipo de profesionales altamente capacitados y apasionados por su labor. Nuestra misión es inspirar confianza en cada paso del camino, brindando resultados que superen las expectativas y mejorando la calidad de vida de quienes confían en nosotros. Al elegirnos, estarás dando el primer paso hacia una nueva era de bienestar y belleza, donde la innovación y la atención personalizada se entrelazan para ofrecerte lo mejor en el cuidado de tu salud y estética. ¡Únete a nuestra comunidad de pacientes satisfechos y descubre una experiencia transformadora, más allá de lo ordinario!</p>
+        
+        </div>
+    </div>
+    </div>
+    <!--JS-->
+    <a class="fas fa-angle-double-up" id="subir" href="#inicio" style="display: none; transition: all 0.5s ease 0s;"></a>
+
+    <div id="redes">
+        <div class="social" id="twitter">
+            <a class="fab fa-twitter" href="https://twitter.com/elonmusk"></a>
+        </div>
+        <div class="social" id="facebook">
+            <a class="fab fa-facebook" href="https://www.facebook.com"></a>
+        </div>
+        <div class="social" id="youtube">
+            <a class="fab fa-youtube" href="https://www.youtube.com/watch?v=_QWObJQeJCo"></a>
+        </div>
+    </div>
+
+    <main id="nosotros">
+        <div class="text-nosotros">
+        <h3>Clinica Dental Centro</h3>
+        <hr class="linea">
+        </div>
+        <p class="parrafo">Somos un equipo de cirujanos dentistas especializados con más de 10 años de experiencia, ofrecemos a nuestros pacientes confianza, tratamientos modernos y especializados en todas nuestras áreas para el cuidado de su salud dental y estética.Nuestros clientes son para nosotros lo mas importante que existe en el mundo.</p>
+        <img src="img/cuidados.jpg" alt="" class="img-responsive">
+    </main>
+
+
+    <div class="fondo-paralaje">
+        <div class="paralaje">
+            <h2>Ven y te atenderemos con lo mejor...</h2>
+            <p>Mediante el uso de prótesis fija, removible e implantes dentales, nuestro equipo altamente capacitado trabaja incansablemente para brindarte lo mejor en cuidado odontológico. Ya sea que necesites reemplazar dientes perdidos o mejorar la estabilidad de tu dentadura, estamos aquí para crear soluciones personalizadas que se ajusten perfectamente a tus necesidades y deseos.</p>
+        </div>
+    </div>
+
+    <section id="galeria" class="galeria">
+        <article>
+            <h2>La Mejor Sonrrisa de Nuestros Clientes</h2>
+            <hr class="linea">
+            <p class="parrafo">
+                Nuestra misión es superar tus expectativas, proporcionándote una experiencia única en el mundo de la odontología. No solo te ayudamos a recuperar la función y la estética de tu sonrisa, sino que también nos preocupamos profundamente por tu bienestar general.
+            </p>
+        </article>
+        <article class="article-2">
+            <input type="submit" value="<<" onclick="atras()" class="botones">
+            <img src="img/img01.jpg" alt="" id="img">
+            <input type="submit" value=">>" onclick="adelante()" class="botones">
+        </article>
+    </section>
+    <script src="js/script.js"></script>
+
+
+ 
+    
+    <div class="fondo-contactos" id="contactos">
+        <div class="text-contactos">
+            <h3><b>CONTACTANOS</b></h3>
+            <hr class="linea">
+        </div>
+        <div class="contactos">
+            <div class="contact">
+                <h3><b>CONTACTANOS EN:</b></h3>
+                <ul class="listas">
+                    <li class="">Calle C. Chinchon.
+                        A la Vuelta de el Restaurante "El Hornero Premiun"
+                        Cerca a la Heladeria Zapatitos.
+                    </li>
+                    <li>Mi Celular: 963936045</li>
+                    <li>Mi Whatsapp: +51 963936045</li>
+                    <li>Mas Info: christhofer_cap@hotmail.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <div class="formulario">
+                    <h2>Dejanos un Mensaje</h2>
+                    <form action="">
+                        <p>Apellidos y Nombres</p>
+                        <input type="text" placeholder="Ingresa tu nombres y Tus Apellidos">
+                        <br>
+                        <p>Correo Electronico</p>
+                        <input type="email" placeholder="Ingresa tu Email o Correo">
+                        <br>
+                        <p>Celular</p>
+                        <input type="text" placeholder="Ingresa tu Telefono/Celular">
+                        <br>
+                        <p>Comentarios</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mapa">
+        <h2 style="text-align: center;">UBICANOS AQUI</h2>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1379.297936721423!2d-77.02715846710699!3d-12.095462167806122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c83f49aad3e3%3A0x52944ceda1a445fe!2sConsultorio%20Odontol%C3%B3gico%20Dr.%20JUAN%20ROMMEL%20MEDINA%20VALDIVIA%20-%20Dr.%20Wady%20Adum!5e0!3m2!1ses-419!2spe!4v1689993364589!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    
+
+
+<div class="fondo-footer">
+    <div class="footer">
+        <footer style="align-content: center;text-align: center;">
+            <img src="img/logo.png" alt="" width="100px">
+            <h3>Dental Dent 2023</h3>
+            <h4>SIGUENOS EN:</h4>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </footer>
+        <footer>
+            <h3>HORARIO DE ATENCIÓN</h3>
+            <hr class="linea">
+            <br> 
+            <p>Todos los Dias -     9:00 am - 8:00pm</p>
+            <br>
+            <p>Lunes a Viernes -    9:00 am - 8:00pm</p>
+        </footer>
+        <footer>
+            <h3>CONTÁCTANOS EN:</h3>
+            <hr class="linea">
+            <br>
+            <ul class="direcciones">
+                <li>C. Chinchón 901, San Isidro 15073.
+                </li>
+                <li>Celular: 951159881 / 951159881</li>
+                <li>Correo: marciediaz75@gmail.com</li>
+            </ul>
+        </footer>
+    </div>
+</div>
+<div class="fondo-cierre">
+    <div class="cierre">
+        <p>Creado por Industrias Comet</p>
+    </div>
+</div>
+
+<div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb"><section id="shadow-host-companion"></section></div></body></html>

@@ -1,0 +1,501 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Contenido de la web*/
+body {
+	font-family: 'Tahoma', sans-serif;
+
+}
+
+p {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+section {
+	padding-top: 70px;
+	width: 100%;
+
+}
+
+/* ... código anterior ... */
+
+/* Modificaciones para el artículo */
+.article {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(11deg, blue, #5ed9ff);
+}
+
+article {
+    margin: auto;
+    width: 80%;
+}
+
+.perfil {
+    width: 250px;
+    margin: 20px; /* Ajustamos el margen aquí para mover la foto de perfil */
+    float: left; /* Alineamos la foto de perfil a la izquierda */
+    shape-outside: circle(); /* Agregamos esto para darle forma circular a la imagen */
+}
+
+.foto-perfil {
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    /* Establecemos un borde transparente para que el arcoíris sea visible */
+    background: #ffe100;
+    /* Color de fondo de respaldo en caso de que la imagen no se cargue */
+
+    /* Degradado para navegadores modernos */
+    background-image: linear-gradient(13deg, #898509, #ebff66);
+    background-blend-mode: overlay;
+    /* Combinar el degradado con la imagen de fondo */
+}
+
+.contenido-article {
+    text-align: right; /* Alineamos el contenido del artículo a la derecha */
+}
+
+/* Estilo para el contenido del artículo */
+.contenido-article h1 {
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-size: 48px;
+    color: goldenrod;
+    padding-bottom: 20px;
+}
+
+.contenido-article p {
+    font-family: 'Tahoma';
+    color: goldenrod;
+    padding-bottom: 60px;
+}
+
+/* ... el resto del código sigue igual ... */
+
+
+article h1 {
+	text-transform: uppercase;
+	font-family: Tahoma;
+	font-size: 48px;
+	color: goldenrod;
+	padding-bottom: 20px;
+}
+
+article p {
+	font-family: 'Tahoma';
+	color: goldenrod;
+	padding-bottom: 60px;
+}
+
+/*Configurando Aside*/
+.sobremi{
+    background-image: url(/image/proyec.gif);
+	background-size: cover;
+    color: #ffffff;
+    padding: 50px 20px;
+	width: 100;
+
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'tahoma';
+    text-align: center;
+    padding: 20px 0;
+	color: white
+
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: rgb(255, 251, 251);
+    
+	font-family: 'arial';
+	
+	padding-right: 8%;
+	text-align: left;
+	width: 100%;
+	
+
+	font-size: 1.3rem;
+	
+}
+.sobremi .fila{
+    display: flex;
+	width: 100%;
+}
+.sobremi .fila .col
+{
+    width: 50%;	
+}
+.sobremi .fila .col h3{
+	padding: 25px;
+	font-family: 'Tahoma';
+	
+	color: #ffffff;
+	margin-bottom: 1px;
+    text-align: left;
+    margin-left: 1%;
+	
+	
+}
+.sobremi .fila .col ul{
+    list-style: none;
+	
+}
+.sobremi .fila .col ul li{
+	
+    margin: 12px 0;
+	
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #a29e9e;
+    width: 130px;
+}
+.sobremi .fila .col ul li span{
+    background-color: #e1d1d1;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses{
+	padding:25px;
+    display: flex;
+    flex-wrap: wrap;
+	text-align: center;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #fdf7f762;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #90b61c;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+/*configurando servicios*/
+
+.section2 {
+	width: 100%;
+}
+
+.fondo {
+	margin: auto;
+	background-image: url(/image/poder.webp);
+	background-size: cover;
+	
+	width: 100%;
+	height: auto;
+	animation: fanimado 10s infinite;
+
+	background-attachment: fixed;
+
+}
+@keyframes fanimado{
+	from{
+		background-position: 0 0;
+	}
+	
+	to{
+		background-position: 100% 100%;
+	}
+}
+
+.fondo img {
+	width: 100%;
+	height: 100%;
+	display: block;
+
+}
+
+aside h4 {
+	color: #000000;
+	text-align: center;
+}
+
+
+.servicio {
+	
+	width: 100%;
+	height: 100%;
+	padding: 100px 0px;
+	
+}
+
+.servicio h2 {
+	
+	font-size: 60px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+	color: rgb(255, 255, 255);
+	
+}
+
+.servicio hr {
+	width: 50%;
+	border: 2px solid rgb(255, 255, 255);
+
+}
+
+
+.cont-servicio {
+	
+	padding-left: 35px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.conocimiento h2{
+	font-size: 45px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 10px 0;
+	color: #ffffff;
+}
+.conocimiento p {
+	padding-left: 5%;
+	padding-right: 8%;
+	text-align: justify;
+	width: 100%;
+	font-family: 'tohima';
+	color: #ffffff;
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+	
+}
+
+.iconozzz {
+	color: #f7ff5c;
+	width: 20px;
+}
+
+.cont-iconos {
+	width: 200px;
+	margin: 15px;
+
+}
+
+.cont-iconos h3 {
+	padding: 5px;
+	color: #15d4fe;
+	text-align: center;
+}
+
+.cont-iconos p {
+	color: #ffffff;
+	text-align: center;
+
+}
+
+.contenedor {
+    background-color: rgba(14, 13, 13, 0.879);
+	text-align: center;
+	padding: 35px;
+	border-radius: 20px;
+	
+	
+}
+
+
+
+footer {
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: linear-gradient(11deg, #000000, #000000);
+	color: gold;
+	font-weight: bold;
+}
+
+.footer {
+	text-align: left;
+	width: 320px;
+}
+
+.div-imagen {
+	width: 50%;
+}
+
+/*Media Querie*/
+
+@media (max-width:991px) {
+
+	article p {
+		display: none;
+	}
+
+	.contenido {
+		width: 90%;
+	}
+
+	aside {
+		padding: 80px;
+		width: 80%;
+	}
+
+	.cont-iconos {
+		padding: 40px 0 40px 0;
+		margin: 20px 20px;
+
+	}
+
+	.div-imagen {
+		width: 50%
+	}
+
+}
+
+@media (max-width:768px) {
+
+	.contenido {
+		width: 95%;
+	}
+
+	aside {
+		width: 100%;
+	}
+
+	.cont-iconos {
+
+
+		padding: 5px 0 5px 0;
+		margin: 20px 10px;
+	}
+
+	footer {
+		clear: both;
+	}
+
+}
+
+@media (max-width:500px) {
+	.perfil {
+		width: 70%;
+		margin: auto;
+	}
+
+	.foto-perfil {
+		width: 100%;
+	}
+
+	.contenido {
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		border: 0;
+		font-size: 10px;
+		width: 100%;
+
+	}
+
+	.section2 {
+		width: 100%;
+	}
+
+
+
+	.cont-iconos {
+		width: 40%;
+		padding-top: 20px;
+		margin-top: 20px;
+
+	}
+
+	.iconozzz {
+		align-content: center;
+		font-size: 30px;
+	}
+
+	.cont-iconos h3 {
+		font-size: 20px;
+	}
+
+	.cont-iconos p {
+		display: none;
+	}
+}
+
+@media (max-width:400px) {
+	aside {
+		text-align: center;
+	}
+
+	aside p {
+		text-align: justify;
+	}
+
+	aside hr {
+		width: 100%;
+	}
+
+	.perfil {
+		margin-right: 45px;
+	}
+
+	.cont-iconos {
+		width: 100%;
+		padding: 0px;
+	}
+
+	.footer {
+		text-align: center;
+	}
+
+	.div-imagen {
+		width: 50%
+	}
+
+}

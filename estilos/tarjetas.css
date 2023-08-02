@@ -1,0 +1,74 @@
+
+/*Estilos para Tarjetas*/
+.fondo-tarjetas{
+	padding:10px 0px;
+    width: 80%;
+	margin: auto;
+   
+}
+
+.tarjetas{
+	
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: left
+    ;
+}
+.text-tarjeta{
+    
+	text-align:center;
+    padding-top: 10px;
+	text-align: justify;
+	margin-left: 1px;
+	width: 100%;
+	margin-left: 1px;
+	
+
+}
+.text-tarjeta h2 {
+    font-family: 'Tahoma';
+	font-size: 25px;
+	color: #ffffff;
+	margin-bottom: 1px;
+    text-align: left;
+    margin-left: 1%;
+}
+
+.tarjeta{
+    
+    display: flex;
+	width:220px;
+    height: 200px;
+    margin: 40px;
+    position:relative;
+    overflow: hidden;
+    margin-left: 15px;
+    
+
+}
+
+.cont-tarjeta{
+    position: absolute;
+    padding: 10px;
+    background:rgba(0, 0, 0, 0.8);
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:white;
+    transform:translateY(100%);
+    transition:0.5s ease-out;
+}
+
+.tarjeta:hover .cont-tarjeta{
+    transform:translateY(0%);
+    transition:0.5s ease-out;
+}
+
+.img-tarjeta{
+	width:250px;
+    height:250px;
+    display: flex;
+
+}
